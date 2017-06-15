@@ -4,6 +4,8 @@ title: genetic-sort
 permalink: /:title
 ---
 
+<link rel="stylesheet" href="/static/css/style.css" />
+
 A friend of mine is working on a course scheduling algorithm for the university
 we attended. The problem is NP-Complete, but through some clever optimizations
 and dynamic programming he was able to generate passing schedules... sometimes.
