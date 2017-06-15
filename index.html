@@ -10,7 +10,7 @@ layout: home
 </head>
 
 <style>
-p {max-width 150;}
+p {width 150;}
 </style>
 
 <body>
@@ -26,7 +26,7 @@ p {max-width 150;}
   <div id="posts">
     {% for post in site.posts %}
       <h3><a href="{{ post.url }}">{{ post.title }} - {{  post.date | date_to_long_string }}</a></h3>
-      {{ post.excerpt }}
+      <p>{{ post.excerpt }}</p>
     {% endfor %}
     <br/>
   </div>
