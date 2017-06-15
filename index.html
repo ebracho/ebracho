@@ -8,14 +8,15 @@ layout: home
   <meta charset="utf-8" />
 </head>
 <body>
-  <h3>hey</h3>
-  <ul>
+  <div id="header">
+    <h3>hey</h3>
+  </div>
+  <div id="posts">
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.excerpt }}
-      </li>
+      <a href="/ebracho/{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
     {% endfor %}
-  </ul>
+    <br/>
+  </div>
 </body>
 </html>
