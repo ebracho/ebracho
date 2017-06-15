@@ -130,10 +130,11 @@ Here's the results after running it for a few generations.
 [GENERATION 7000] Most fit: lmnjkvwxyzabcdefghopqrstui (fitness=20)
 ```
  
-After running it a few times it seems work pretty well until it hits the 18-20
-fitness range where it stays indefinitely. That's probably because once we
-hit that level of sortedness, there are very few crossovers and mutations
-that will bring us closer to a perfect sort.
+After running it a few times it seems to work pretty well, at least  
+until it hits the 18-20 fitness range where it stays indefinitely. 
+That's probably because once we hit that level of sortedness, there 
+are very few crossovers or mutations that will bring us closer to a 
+perfect sort.
  
 What I gathered from this is that the performance of a genetic algorithm
 probably has a lot to do with the solution space and the cleverness of
