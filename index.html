@@ -25,7 +25,7 @@ p {max-width 150;}
 
   <div id="posts">
     {% for post in site.posts %}
-      <h3><a href="/ebracho/{{ post.url }}">{{ post.title }} - {{  post.date | date_to_long_string }}</a></h3>
+      <h3><a href="/ebracho{{ post.url }}">{{ post.title }} - {{  post.date | date_to_long_string }}</a></h3>
       {{ post.excerpt }}
     {% endfor %}
     <br/>
