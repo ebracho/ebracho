@@ -11,7 +11,6 @@ Apparently the order that he applies the scheduling constraints seems to randoml
 affect the quality of the solution. Since he couldn't find a pattern to how
 the order of application of constraints affected the outcome of his algorithm,
 he decided to use a genetic algorithm to search for an an optimal permutation.
-</p>
 
 <!-- more --> 
  
