@@ -38,7 +38,7 @@ do it.
  
 ### Implementing the parts
  
-Let's start a fitness function to determine "how sorted" a string is.
+Let's start with a fitness function to determine "how sorted" a string is.
 This works by counting how many characters in the string are 1 less than
 that follows it.
  
