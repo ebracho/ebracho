@@ -49,7 +49,7 @@ population = np.array(sorted(population, key=fitness))
 
 Let's start with a fitness function to determine "how sorted" a string is.
 This works by counting how many characters in the string are 1 less than
-that follows it.
+the character that follows it.
  
 {% highlight python %}
 def fitness(s):
