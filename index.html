@@ -3,20 +3,34 @@ title: Eddie Bracho
 layout: home
 ---
 <html>
+
 <head>
   <title>Eddie Bracho</title>
   <meta charset="utf-8" />
 </head>
+
+<style>
+p {max-width 300;}
+</style>
+
 <body>
-  <div id="header">
-    <h3>hey</h3>
-  </div>
+
+  <center>
+    <h2>Eddie Bracho</h2>
+    <img height="300px" width="300px" src="/ebracho/static/img/me.jpg"></img>
+    <p>I like math and programming.</p>
+  </center>
+
+  <hr/>
+
   <div id="posts">
     {% for post in site.posts %}
-      <a href="/ebracho/{{ post.url }}">{{ post.title }}</a>
+      <h3><a href="/ebracho/{{ post.url }}">{{ post.title }}</a></h3>>
       {{ post.excerpt }}
     {% endfor %}
     <br/>
   </div>
+
 </body>
+
 </html>
