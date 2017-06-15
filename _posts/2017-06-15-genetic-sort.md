@@ -1,6 +1,6 @@
 ---
 layout: post
-title: test
+title: genetic-sort
 permalink: /:title
 ---
 
@@ -34,7 +34,7 @@ Realistically, there's probably a lot more caveats and considerations depending 
 the type of problem you're dealing with, but this is a POC in Python so let's just
 do it.
 
-### Generate the Sample Population
+### Implementing the parts
 
 Let's start a fitness function to determine "how sorted" a string is.
 This works by counting how many characters in the string are 1 less than
@@ -96,6 +96,8 @@ def mutate(s,rate):
     return s
 {% endhighlight %}
 
+### Bringing it together
+
 Now that we have all the parts, were ready to assemble this genetic algorithm:
 
 {% highlight python %}
@@ -111,6 +113,8 @@ for _ in range(GENERATIONS):
 One small optimization I added was to keep the population size constant. That way
 we can simulate as many generations as needed without blowing up the amount of
 computation required for each generation. 
+
+### Results
 
 Here's the results after running it for a few generations.
 
