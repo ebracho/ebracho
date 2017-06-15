@@ -31,7 +31,7 @@ on genetic algorithms. It roughly boils down to these steps:
 4. Randomly select two solutions (with a bias towards better-fit solutions).
 5. Crossover (breed) those two solutions into a new solution and add it to the population.
 6. Every once in awhile, introduce a random mutation (as is done in nature).
-7. Repeat until an optimal solution is born
+7. Repeat 4:6 until an optimal solution is born
  
 Realistically, there's probably a lot more caveats and considerations depending on
 the type of problem you're dealing with, but this is a POC in Python so let's just
