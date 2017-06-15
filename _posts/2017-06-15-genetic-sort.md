@@ -4,6 +4,7 @@ title: genetic-sort
 permalink: /:title
 ---
  
+<p>
 A friend of mine is working on a course scheduling algorithm for the university
 we attended. The problem is NP-Complete, but through some clever optimizations
 and dynamic programming he was able to generate passing schedules... sometimes.
@@ -11,6 +12,7 @@ Apparently the order that he applies the scheduling constraints seems to randoml
 affect the quality of the solution. Since he couldn't find a pattern to how
 the order of application of constraints affected the outcome of his algorithm,
 he decided to use a genetic algorithm to search for an an optimal permutation.
+</p>
  
 Since neither of us is that experienced with genetic algorithms, I figured I could
 do a little proof of concept in Python. His constraint data structures are
