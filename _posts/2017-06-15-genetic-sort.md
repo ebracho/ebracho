@@ -38,15 +38,6 @@ do it.
  
 ### Implementing the parts
  
-Let's start with a fitness function to determine "how sorted" a string is.
-This works by counting how many characters in the string are 1 less than
-that follows it.
- 
-{% highlight python %}
-def fitness(s):
-    return sum(ord(s[i]) == ord(s[i+1])-1 for i in range(len(s)-1))
-{% endhighlight %}
- 
 For the sample population, we're going to use random permutations of the alphabet.
 Let's also sort them by fitness (yes, we are using sorting to implement sorting).
  
@@ -54,6 +45,15 @@ Let's also sort them by fitness (yes, we are using sorting to implement sorting)
 alphabet = np.array(list('abcdefghijklmnopqrstuvwxyz'))
 population = np.array([permutation(alphabet) for _ in range(SAMPLE_SIZE)])
 population = np.array(sorted(population, key=fitness))
+{% endhighlight %}
+
+Let's start with a fitness function to determine "how sorted" a string is.
+This works by counting how many characters in the string are 1 less than
+that follows it.
+ 
+{% highlight python %}
+def fitness(s):
+    return sum(ord(s[i]) == ord(s[i+1])-1 for i in range(len(s)-1))
 {% endhighlight %}
  
 Next we need a function for selecting two solutions from the population
