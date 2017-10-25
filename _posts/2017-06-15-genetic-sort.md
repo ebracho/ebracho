@@ -148,4 +148,3 @@ for the genetic algorithm to get trapped in. Hopefully that won't be
 the case with my friend's constraint scheduling algorithm, but if so
 then we'll have to find a more suitable optimization approach.
  
-

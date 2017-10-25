@@ -1,3 +1,8 @@
 p {
   max-width: 50em;
 }
+
+/* post content */
+#content {
+  max-width: 50em;
+}
