@@ -4,6 +4,8 @@ title: genetic-sort
 permalink: /:title
 ---
 
+### Genetic Sort
+
 <link rel="stylesheet" href="/static/css/style.css" />
 
 A friend of mine is working on a course scheduling algorithm for the university
